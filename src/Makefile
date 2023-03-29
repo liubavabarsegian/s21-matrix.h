@@ -48,10 +48,10 @@ else
 endif
 
 style: 
-	clang-format --style=google *.c tests/*.c -n
+	clang-format --style=google *.c *.h tests/*.c -n
 
 correct_style: 
-	clang-format --style=google *.c tests/*.c -n
+	clang-format --style=google *.c *.h tests/*.c -i
 
 clean:
 	rm -rf *.o *.a test test_linux *.gcno *.gcda *.info report
